@@ -1,0 +1,70 @@
+<!-- WelcomeActivity的界面设计为一个LinearLayout嵌套一个tablelayout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity" >
+	<!-- TextView用来显示作品信息 -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:textSize="20sp"
+        android:textColor="#990066"
+        android:textStyle="bold"
+        android:background="#0099CC" />
+    <!-- TableLayout用来显示四个button -->
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <TableRow 
+            android:layout_weight="1" >
+            <Button
+                android:id="@+id/btn_to_calculator"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:background="#FFCC33"
+                android:text="@string/btn_to_calculator"
+                android:textSize="20sp"
+        		android:textColor="#CC0033"
+        		android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_to_numberconversion"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:background="#CC0033"
+                android:text="@string/btn_to_numberconversion"
+                android:textSize="20sp"
+        		android:textColor="#FFCC33"
+        		android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_weight="1" >
+            <Button
+                android:id="@+id/btn_to_unitdeformation"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:background="#333366"
+                android:text="@string/btn_to_unitdeformation"
+                android:textSize="20sp"
+        		android:textColor="#CCFF66"
+        		android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_to_datecalctlator"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:background="#CCFF66"
+                android:text="@string/btn_to_datecalctlator"
+                android:textSize="20sp"
+        		android:textColor="#333366"
+        		android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
